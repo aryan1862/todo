@@ -10,9 +10,9 @@ public class TodoService {
     private static int todosCount = 0;
     private static List<Todo> todos=new ArrayList<>();
     static {
-        todos.add( new Todo(1,"Aryan", "Learn Spring", LocalDate.now().plusYears(1),false));
-        todos.add( new Todo(1,"Kumar", "Learn SpringBoot", LocalDate.now().plusYears(1),false));
-        todos.add( new Todo(1,"Singh", "Learn JS", LocalDate.now().plusYears(1),false));
+        todos.add( new Todo(++todosCount,"Aryan", "Learn Spring", LocalDate.now().plusYears(1),false));
+        todos.add( new Todo(++todosCount,"Kumar", "Learn SpringBoot", LocalDate.now().plusYears(1),false));
+        todos.add( new Todo(++todosCount,"Singh", "Learn JS", LocalDate.now().plusYears(1),false));
     }
 
     public List<Todo> findByUserName(String username){
