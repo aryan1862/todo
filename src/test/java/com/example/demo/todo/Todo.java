@@ -1,6 +1,5 @@
 package com.example.demo.todo;
 
-import jakarta.validation.constraints.Size;
 import org.springframework.boot.convert.DataSizeUnit;
 
 import java.time.LocalDate;
@@ -8,7 +7,6 @@ import java.time.LocalDate;
 public class Todo {
     private int id;
     private String username;
-    @Size(min=10 , message = "please above 10 characters")
     private String description;
     private LocalDate targetDate;
     private boolean done;
